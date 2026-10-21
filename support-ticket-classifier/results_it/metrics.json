@@ -1,0 +1,131 @@
+{
+  "dataset": {
+    "schema": "Kaggle - IT Service Ticket Classification",
+    "text_cols": [
+      "Document"
+    ],
+    "category_col": "Topic_group",
+    "priority_col": null,
+    "rows_loaded": 47837
+  },
+  "n_rows_after_cleaning": 47762,
+  "n_train": 38209,
+  "n_test": 9553,
+  "selected_model": "Logistic Regression",
+  "model_comparison": {
+    "Logistic Regression": {
+      "cv_macro_f1_mean": 0.857873466330909,
+      "cv_macro_f1_std": 0.004012219626234638,
+      "test": {
+        "accuracy": 0.8603580027216581,
+        "macro_f1": 0.8615931969911086,
+        "weighted_f1": 0.8605609340777085
+      },
+      "seconds": 38.9
+    },
+    "Linear SVM": {
+      "cv_macro_f1_mean": 0.856962848003921,
+      "cv_macro_f1_std": 0.004396587717635124,
+      "test": {
+        "accuracy": 0.8624515858892494,
+        "macro_f1": 0.8619967975130297,
+        "weighted_f1": 0.8623906493554513
+      },
+      "seconds": 15.5
+    },
+    "Complement Naive Bayes": {
+      "cv_macro_f1_mean": 0.8047225566064765,
+      "cv_macro_f1_std": 0.00034733284358775033,
+      "test": {
+        "accuracy": 0.8169161519941379,
+        "macro_f1": 0.8092653472621208,
+        "weighted_f1": 0.815897627815852
+      },
+      "seconds": 10.1
+    },
+    "Random Forest": {
+      "cv_macro_f1_mean": 0.8268692776315604,
+      "cv_macro_f1_std": 0.004159350873135497,
+      "test": {
+        "accuracy": 0.8360724379775987,
+        "macro_f1": 0.8344893003935108,
+        "weighted_f1": 0.8357457832090253
+      },
+      "seconds": 122.4
+    }
+  },
+  "category_test_metrics": {
+    "accuracy": 0.8603580027216581,
+    "macro_f1": 0.8615931969911086,
+    "weighted_f1": 0.8605609340777085
+  },
+  "per_class": {
+    "Access": {
+      "precision": 0.9048640915593705,
+      "recall": 0.8883426966292135,
+      "f1-score": 0.8965272856130404,
+      "support": 1424.0
+    },
+    "Administrative rights": {
+      "precision": 0.744,
+      "recall": 0.7926136363636364,
+      "f1-score": 0.7675378266850069,
+      "support": 352.0
+    },
+    "HR Support": {
+      "precision": 0.885673624288425,
+      "recall": 0.8568150527765029,
+      "f1-score": 0.8710053650571495,
+      "support": 2179.0
+    },
+    "Hardware": {
+      "precision": 0.8472118959107807,
+      "recall": 0.837252020573108,
+      "f1-score": 0.8422025129342202,
+      "support": 2722.0
+    },
+    "Internal Project": {
+      "precision": 0.8318777292576419,
+      "recall": 0.8985849056603774,
+      "f1-score": 0.8639455782312925,
+      "support": 424.0
+    },
+    "Miscellaneous": {
+      "precision": 0.8143344709897611,
+      "recall": 0.8454996456413891,
+      "f1-score": 0.8296244784422809,
+      "support": 1411.0
+    },
+    "Purchase": {
+      "precision": 0.9255533199195171,
+      "recall": 0.9426229508196722,
+      "f1-score": 0.934010152284264,
+      "support": 488.0
+    },
+    "Storage": {
+      "precision": 0.8807829181494662,
+      "recall": 0.895117540687161,
+      "f1-score": 0.8878923766816144,
+      "support": 553.0
+    }
+  },
+  "most_confused_pair": [
+    "HR Support",
+    "Hardware",
+    157
+  ],
+  "confidence_analysis": {
+    "threshold": 0.5,
+    "share_auto_routed": 0.893960012561499,
+    "accuracy_auto_routed": 0.9039812646370023,
+    "accuracy_flagged_for_review": 0.49259624876604147
+  },
+  "priority": {
+    "rule_distribution": {
+      "Medium": 1382,
+      "High": 282,
+      "Low": 7823,
+      "Critical": 66
+    }
+  }
+}
