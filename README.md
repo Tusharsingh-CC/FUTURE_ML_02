@@ -1,1 +1,2 @@
 An explainable NLP system that reads customer support tickets, assigns each a category with a confidence score, and sets a priority from Low to Critical. Confident tickets are routed automatically, uncertain ones go to a human, and the queue is sorted so urgent issues come first. It reaches about 0.86 macro-F1 on 47k real IT support tickets, and every priority decision shows its reasoning.
+project direct link(https://1drv.ms/f/c/900f937090d25f7e/IgBnOtNcIQanRJ791SJuoditAYrtG-zV3t4culJ-s8_E2I8?e=bIunLf)
